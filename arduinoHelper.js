@@ -219,7 +219,7 @@ async function handleArduinoProcess(mainWindow) {
     mainWindow.webContents.send('status', 'Bibliothèques vérifiées.');
 
     // Spécifier le chemin vers votre fichier .cpp
-    const sketchPath = path.join(__dirname, 'testautocompilation', 'src', 'main.cpp');
+    const sketchPath = path.join(__dirname, 'autocompilation', 'src', 'main.cpp');
     const arduinoBoard = 'arduino:avr:uno';
 
     await compileCode(arduinoBoard, sketchPath);
