@@ -13,6 +13,9 @@ function createWindow() {
     },
   });
 
+  // Maximiser la fenêtre au démarrage
+  mainWindow.maximize();
+
   mainWindow.loadURL('http://localhost:3000');
 
   // Ajouter un écouteur pour l'événement Arduino
