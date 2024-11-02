@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #1976d2;
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --background-color: #f5f5f5;
+  --console-bg: #1e1e1e;
+  --text-color: #333;
+  --border-radius: 8px;
+  --spacing: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+.section {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin: 0 0 var(--spacing);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.console-container {
+  margin-top: var(--spacing);
+}
+
+.console-output {
+  background-color: var(--console-bg);
+  color: white;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  font-family: 'Consolas', 'Monaco', monospace;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.console-line {
+  padding: 2px 0;
+  border-bottom: 1px solid #333;
+}
+
+.status-bar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+}
+
+.clear-button {
+  background-color: #666;
+  margin-top: 10px;
+}
+
+.file-info {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  margin: 10px 0;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: var(--border-radius);
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.console-container {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.console-container.hide {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.console-container.show {
+  height: auto;
+  margin-top: var(--spacing);
+}
+
+.toggle-logs {
+  background-color: #607d8b;
+}
+
+.toggle-logs:hover {
+  background-color: #455a64;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Animation pour la barre de progression */
+@keyframes progress-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 0;
+  }
+}
+
+.progress-bar {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 30px 30px;
+  animation: progress-animation 1s linear infinite;
+}
