@@ -16,7 +16,12 @@ function createWindow() {
   // Maximiser la fenêtre au démarrage
   mainWindow.maximize();
 
-  mainWindow.loadURL('http://localhost:3000');
+  // En production, charge le fichier HTML buildé
+  if (app.isPackaged) {
+    mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
+  } else {
+    mainWindow.loadURL('http://localhost:3000');
+  }
 
   // Ajouter un écouteur pour l'événement Arduino
   ipcMain.on('arduino:startProcess', () => {
