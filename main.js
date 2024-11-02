@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const { execFile, spawn } = require('child_process');
 const { handleArduinoProcess } = require('./arduinoHelper'); // Importez le fichier Arduino
@@ -58,6 +58,32 @@ ipcMain.handle('convert-file', async (event, filePath) => {
       }
     });
   });
+});
+
+ipcMain.handle('open-file', async (_, filePath) => {
+  try {
+    // Convertir le chemin relatif en chemin absolu
+    const absolutePath = path.join(process.cwd(), filePath);
+    console.log('Tentative d\'ouverture du fichier:', absolutePath);
+    await shell.openPath(absolutePath);
+    return { success: true };
+  } catch (error) {
+    console.error('Erreur lors de l\'ouverture du fichier:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('open-folder', async (_, folderPath) => {
+  try {
+    // Convertir le chemin relatif en chemin absolu
+    const absolutePath = path.join(process.cwd(), folderPath);
+    console.log('Tentative d\'ouverture du dossier:', absolutePath);
+    await shell.openPath(absolutePath);
+    return { success: true };
+  } catch (error) {
+    console.error('Erreur lors de l\'ouverture du dossier:', error);
+    return { success: false, error: error.message };
+  }
 });
 
 app.on('ready', createWindow);

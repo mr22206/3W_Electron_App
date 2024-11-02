@@ -8,6 +8,8 @@ function DataRecoverySection() {
   const [showLogs, setShowLogs] = useState(true);
   const [progress, setProgress] = useState(0);
   const logsEndRef = useRef(null);
+  const [csvGenerated, setCsvGenerated] = useState(false);
+  const [csvPath, setCsvPath] = useState('');
 
   const scrollToBottom = () => {
     logsEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -55,10 +57,39 @@ function DataRecoverySection() {
     try {
       addLog('Début de la conversion...');
       const result = await window.electronAPI.convertBinaryToCSV(selectedFile);
+      
+      // Extraire le chemin du fichier CSV du résultat
+      const match = result.match(/converted_files[/\\][^"\n]+\.csv/);
+      if (match) {
+        let csvPath = match[0];
+        csvPath = csvPath.replace('.bin.csv', '.csv');
+        setCsvPath(csvPath);
+        setCsvGenerated(true);
+        addLog(`Fichier CSV généré : ${csvPath}`);
+      }
+      
       addLog('Conversion réussie !');
-      addLog(result);
     } catch (error) {
       addLog(`Erreur lors de la conversion : ${error}`);
+    }
+  };
+
+  const handleOpenCsvFile = async () => {
+    try {
+      await window.electronAPI.openFile(csvPath);
+      addLog('Ouverture du fichier CSV');
+    } catch (error) {
+      addLog(`Erreur lors de l'ouverture du fichier : ${error}`);
+    }
+  };
+
+  const handleOpenCsvFolder = async () => {
+    try {
+      // On utilise le même chemin mais on veut ouvrir le dossier parent
+      await window.electronAPI.openFolder('converted_files');
+      addLog('Ouverture du dossier contenant le fichier CSV');
+    } catch (error) {
+      addLog(`Erreur lors de l'ouverture du dossier : ${error}`);
     }
   };
 
@@ -83,6 +114,20 @@ function DataRecoverySection() {
           disabled={!selectedFile}
         >
           Convertir
+        </button>
+        <button 
+          className="button"
+          onClick={handleOpenCsvFile}
+          disabled={!csvGenerated}
+        >
+          📄 Ouvrir le fichier CSV
+        </button>
+        <button 
+          className="button"
+          onClick={handleOpenCsvFolder}
+          disabled={!csvGenerated}
+        >
+          📁 Ouvrir l'emplacement
         </button>
         <button 
           className="button toggle-logs"
