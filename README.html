@@ -1,0 +1,728 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\rezki\.cursor\extensions\shd101wyy.markdown-preview-enhanced-0.8.14\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="documentation-utilisateur---station-météo-embarquée">Documentation Utilisateur - Station Météo Embarquée </h1>
+<h2 id="table-des-matières">Table des matières </h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#utilisation-de-lapplication">Utilisation de l'application</a>
+<ul>
+<li><a href="#d%C3%A9bogage-et-t%C3%A9l%C3%A9versement">Débogage et Téléversement</a></li>
+<li><a href="#r%C3%A9cup%C3%A9ration-des-donn%C3%A9es">Récupération des Données</a></li>
+</ul>
+</li>
+<li><a href="#r%C3%A9solution-des-probl%C3%A8mes-courants">Résolution des problèmes courants</a></li>
+<li><a href="#support">Support</a></li>
+</ol>
+<h2 id="introduction">Introduction </h2>
+<h3 id="vue-densemble-du-système">Vue d'ensemble du système </h3>
+<p>La Station Météo Embarquée se compose de deux parties principales :</p>
+<ol>
+<li>
+<p><strong>Le matériel</strong> : Station météo basée sur Arduino</p>
+<ul>
+<li>Arduino UNO</li>
+<li>Capteurs (température, humidité, GPS, etc.)</li>
+<li>Module SD pour le stockage</li>
+</ul>
+<!-- ![Schéma du montage](images/schema_montage.png) -->
+</li>
+<li>
+<p><strong>Le logiciel</strong> : Application de gestion</p>
+<ul>
+<li>Interface utilisateur intuitive</li>
+<li>Outils de programmation automatisés</li>
+<li>Convertisseur de données</li>
+</ul>
+</li>
+</ol>
+<p><img src="images_documentation/interface_main.png" alt="Interface principale"></p>
+<h3 id="fonctionnalités-principales">Fonctionnalités principales </h3>
+<ul>
+<li>Programmer facilement une station météo Arduino</li>
+<li>Récupérer et convertir les données météorologiques collectées</li>
+<li>Visualiser les logs et suivre le processus d'installation</li>
+</ul>
+<h2 id="installation">Installation </h2>
+<h3 id="prérequis-matériels-détaillés">Prérequis matériels détaillés </h3>
+<ol>
+<li>
+<p><strong>Arduino UNO</strong> 🎛️</p>
+<ul>
+<li>Version recommandée : R3 ou ultérieure</li>
+<li>Port USB type B fonctionnel</li>
+<li>Tension d'alimentation : 5V</li>
+<li>Fréquence : 16 MHz</li>
+</ul>
+<p><img src="images_documentation/arduino_uno.png" alt="Arduino UNO"></p>
+</li>
+<li>
+<p><strong>Carte SD</strong> 💾</p>
+<ul>
+<li>Capacité : 32 Go maximum</li>
+<li>Format : FAT32</li>
+<li>Classe de vitesse : Classe 10 recommandée</li>
+<li>Module SD compatible SPI</li>
+<li>Tension : 5V (via Arduino)</li>
+</ul>
+<p><img src="images_documentation/sd_card.png" alt="Carte SD"></p>
+</li>
+<li>
+<p><strong>Capteur BME280</strong> 🌡️</p>
+<ul>
+<li>Interface I2C</li>
+<li>Tension : 3.3V ou 5V</li>
+<li>Précision température : ±1°C</li>
+<li>Précision humidité : ±3%</li>
+<li>Précision pression : ±1 hPa</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Note</strong> : Compatible directement en 5V avec l'Arduino</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Module GPS NEO-6M</strong> 📍</p>
+<ul>
+<li>Interface série (UART)</li>
+<li>Tension : 5V (alimentation directe via Arduino)</li>
+<li>Antenne céramique intégrée</li>
+<li>Précision : jusqu'à 2.5m</li>
+<li>Vitesse de transmission : 9600 baud</li>
+</ul>
+<blockquote>
+<p>✅ <strong>Avantage</strong> : Pas besoin de convertisseur de niveau, fonctionne directement en 5V</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Composants additionnels</strong> 🔧</p>
+<ul>
+<li>Horloge RTC DS1307
+<ul>
+<li>Interface I2C</li>
+<li>Tension : 5V</li>
+<li>Pile CR2032 pour la sauvegarde</li>
+</ul>
+</li>
+<li>Câbles de connexion
+<ul>
+<li>Jumpers mâle-femelle</li>
+<li>Jumpers femelle-femelle</li>
+</ul>
+</li>
+<li>Résistances pull-up (déjà intégrées sur Arduino)</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration système requise</strong> 💻</p>
+<ul>
+<li>Windows 10/11 (64 bits)</li>
+<li>4 Go RAM minimum</li>
+<li>500 Mo d'espace disque</li>
+<li>1 port USB disponible</li>
+</ul>
+</li>
+</ol>
+<h3 id="schéma-de-connexion-">Schéma de connexion 🔌 </h3>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Pin Arduino</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Module SD</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MOSI</td>
+<td>11</td>
+<td>Data Out</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>12</td>
+<td>Data In</td>
+</tr>
+<tr>
+<td>SCK</td>
+<td>13</td>
+<td>Clock</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>4</td>
+<td>Chip Select</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>5V</td>
+<td>Alimentation</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+<td>Masse</td>
+</tr>
+<tr>
+<td><strong>BME280</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SDA</td>
+<td>A4</td>
+<td>Data I2C</td>
+</tr>
+<tr>
+<td>SCL</td>
+<td>A5</td>
+<td>Clock I2C</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>5V</td>
+<td>Alimentation</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+<td>Masse</td>
+</tr>
+<tr>
+<td><strong>GPS NEO-6M</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TX</td>
+<td>3</td>
+<td>Transmission</td>
+</tr>
+<tr>
+<td>RX</td>
+<td>2</td>
+<td>Réception</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>5V</td>
+<td>Alimentation</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+<td>Masse</td>
+</tr>
+<tr>
+<td><strong>RTC DS1307</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SDA</td>
+<td>A4</td>
+<td>Data I2C</td>
+</tr>
+<tr>
+<td>SCL</td>
+<td>A5</td>
+<td>Clock I2C</td>
+</tr>
+<tr>
+<td>VCC</td>
+<td>5V</td>
+<td>Alimentation</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+<td>Masse</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚡ <strong>Alimentation</strong> : Tous les composants sont alimentés en 5V directement via l'Arduino</p>
+</blockquote>
+<h3 id="vérification-du-montage-">Vérification du montage 🔍 </h3>
+<ol>
+<li>
+<p><strong>Test d'alimentation</strong></p>
+<ul>
+<li>LED power Arduino allumée</li>
+<li>LED du module GPS clignotante</li>
+<li>Écran du BME280 actif (si présent)</li>
+</ul>
+</li>
+<li>
+<p><strong>Test de communication</strong></p>
+<ul>
+<li>GPS : LED fix clignote (acquisition satellites)</li>
+<li>SD : LED d'accès clignote lors des écritures</li>
+<li>BME280 : Répond sur l'adresse I2C 0x76 ou 0x77</li>
+<li>RTC : Maintient l'heure même après redémarrage</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>🛠️ <strong>Dépannage</strong> : En cas de problème, vérifiez :</p>
+<ul>
+<li>Les connexions (soudures, câbles)</li>
+<li>L'alimentation de chaque module</li>
+<li>Les conflits d'adresse I2C</li>
+<li>La qualité des câbles de connexion</li>
+</ul>
+</blockquote>
+<h3 id="guide-dinstallation-pas-à-pas">Guide d'installation pas à pas </h3>
+<h4 id="1-téléchargement">1. Téléchargement </h4>
+<ul>
+<li>Rendez-vous sur <a href="https://github.com/mr22206/3W_Electron_App.git">le lien de téléchargement</a></li>
+<li>Téléchargez le fichier <code>StationMeteo-Setup.exe</code></li>
+</ul>
+<p><img src="images_documentation/download.png" alt="Téléchargement"></p>
+<h4 id="2-installation-du-logiciel">2. Installation du logiciel </h4>
+<ol>
+<li>
+<p><strong>Désactivation temporaire de l'antivirus</strong></p>
+<p><img src="images_documentation/antivirus.png" alt="Désactivation antivirus"></p>
+<blockquote>
+<p>💡 <strong>Aide :</strong> Pour désactiver votre antivirus, consultez <a href="https://www.malekal.com/comment-desactiver-son-antivirus/">ce guide détaillé</a></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Installation de l'application</strong></p>
+<ul>
+<li>
+<p>Double-cliquez sur <code>StationMeteo-Setup.exe</code></p>
+</li>
+<li>
+<p>Dans l'assistant d'installation :</p>
+<ol>
+<li>Choisissez le type d'installation :
+<ul>
+<li>"Pour tous les utilisateurs" (nécessite les droits administrateur)</li>
+<li>"Seulement pour l'utilisateur actuel"</li>
+</ul>
+</li>
+</ol>
+<p><img src="images_documentation/setup_wizard.png" alt="Assistant d'installation"></p>
+<ol start="2">
+<li>Sélectionnez le dossier d'installation et cliquez sur "Installer"</li>
+</ol>
+<p><img src="images_documentation/setup_wizard1.png" alt="alt text"></p>
+<ol start="3">
+<li>À la fin de l'installation, cochez ou décochez "Lancer Station Météo Embarquée"</li>
+<li>Cliquez sur "Terminer"</li>
+</ol>
+<p><img src="images_documentation/setup_wizard2.png" alt="alt text"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-configuration-du-matériel">3. Configuration du matériel </h4>
+<ol>
+<li>
+<p><strong>Préparation de la carte SD</strong></p>
+<ul>
+<li>Guide détaillé du formatage</li>
+<li>Captures d'écran de l'utilitaire de formatage</li>
+</ul>
+<p><img src="images_documentation/format_sd.png" alt="Formatage"></p>
+<blockquote>
+<p>💡 <strong>Aide :</strong> Pour formater votre carte SD en FAT32, consultez <a href="https://4ddig.tenorshare.com/fr/carte-sd/comment-formater-la-carte-sd-en-fat32-dans-windows-10-11.html">ce guide détaillé</a></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Installation des pilotes Arduino</strong></p>
+<ol>
+<li>
+<p><strong>Installation automatique</strong> (recommandée)</p>
+<ul>
+<li>Branchez votre Arduino UNO à l'ordinateur</li>
+<li>Windows installera automatiquement les pilotes</li>
+<li>Attendez la notification "Le périphérique est prêt à être utilisé"</li>
+</ul>
+<p><img src="images_documentation/auto_install.png" alt="Installation automatique"></p>
+</li>
+<li>
+<p><strong>Installation manuelle</strong> (si l'automatique échoue)</p>
+<ul>
+<li>Téléchargez les pilotes depuis <a href="https://www.arduino.cc/en/Guide/DriverInstallation">le site officiel Arduino</a></li>
+<li>Ouvrez le Gestionnaire de périphériques Windows</li>
+<li>Localisez l'Arduino sous "Ports (COM &amp; LPT)" ou "Autres périphériques"</li>
+<li>Clic droit &gt; Mettre à jour le pilote</li>
+<li>Choisissez "Rechercher les pilotes sur mon ordinateur"</li>
+<li>Sélectionnez le dossier des pilotes téléchargés</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Aide :</strong> Pour plus d'informations sur la mise à jour manuelle des pilotes, consultez <a href="https://www.malekal.com/mise-a-jour-manuelle-de-pilotes-windows/">ce guide détaillé</a></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Vérification de l'installation</strong></p>
+<ul>
+<li>Dans le Gestionnaire de périphériques</li>
+<li>L'Arduino doit apparaître sous "Ports (COM &amp; LPT)"</li>
+<li>Exemple : "Arduino UNO (COM3)"</li>
+</ul>
+<p><img src="images_documentation/verify_install.png" alt="Vérification"></p>
+</li>
+</ol>
+<blockquote>
+<p>💡 <strong>En cas de problème :</strong></p>
+<ul>
+<li>Essayez un autre câble USB</li>
+<li>Testez un port USB différent</li>
+<li>Redémarrez votre ordinateur</li>
+<li>Désinstallez et réinstallez les pilotes</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="utilisation-de-lapplication">Utilisation de l'application </h2>
+<h3 id="débogage-et-téléversement">Débogage et Téléversement </h3>
+<h4 id="1-préparation-et-vérification">1. Préparation et vérification </h4>
+<ul>
+<li>
+<p><strong>Vérification du matériel</strong></p>
+<ol>
+<li>Branchez l'Arduino UNO à votre ordinateur via le câble USB</li>
+<li>Vérifiez que la LED d'alimentation de l'Arduino est allumée</li>
+<li>Assurez-vous que tous les capteurs sont correctement connectés :
+<ul>
+<li>Capteur BME280 sur les pins I2C</li>
+<li>Module SD sur les pins SPI</li>
+<li>GPS sur les pins série</li>
+</ul>
+</li>
+</ol>
+<!-- ![Branchements](images_documentation/connections.png) -->
+</li>
+<li>
+<p><strong>Vérification logicielle</strong></p>
+<ol>
+<li>Lancez l'application Station Météo</li>
+<li>Dans la section "Débogage et Téléversement", vérifiez le message de statut :
+<ul>
+<li>"En attente..." : L'application est prête</li>
+<li>"Arduino non détecté" : Vérifiez le branchement USB</li>
+</ul>
+</li>
+</ol>
+<p><img src="images_documentation/debug_interface.png" alt="Interface de débogage"></p>
+</li>
+</ul>
+<h4 id="2-processus-de-téléversement">2. Processus de téléversement </h4>
+<ul>
+<li><strong>Étapes automatisées</strong>
+<ol>
+<li>
+<p><strong>Initialisation du processus</strong></p>
+<ul>
+<li>Détection de l'Arduino</li>
+<li>Vérification de la connexion</li>
+</ul>
+</li>
+<li>
+<p><strong>Vérification des prérequis</strong></p>
+<ul>
+<li>Détection du port COM</li>
+<li>Test de communication</li>
+</ul>
+</li>
+<li>
+<p><strong>Installation des bibliothèques</strong></p>
+<ul>
+<li>Vérification des bibliothèques nécessaires</li>
+<li>Installation des bibliothèques manquantes :
+<ul>
+<li>DHT sensor library</li>
+<li>Adafruit BME280</li>
+<li>RTClib</li>
+<li>SdFat</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Compilation</strong></p>
+<ul>
+<li>Préparation du code source</li>
+<li>Compilation pour Arduino UNO</li>
+</ul>
+</li>
+<li>
+<p><strong>Téléversement</strong></p>
+<ul>
+<li>Transfert du programme vers l'Arduino</li>
+<li>Vérification du téléversement</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<p><img src="images_documentation/upload_process.png" alt="Processus de téléversement"></p>
+<h4 id="3-interprétation-des-logs">3. Interprétation des logs </h4>
+<ul>
+<li>
+<p><strong>Messages courants</strong></p>
+<ul>
+<li><code>=== Démarrage du processus Arduino ===</code> : Début du processus</li>
+<li><code>Arduino détecté sur le port: COM[X]</code> : Connexion réussie</li>
+<li><code>Bibliothèque [nom] installée avec succès</code> : Installation des dépendances</li>
+<li><code>Code compilé avec succès</code> : Compilation réussie</li>
+<li><code>=== Processus Arduino terminé avec succès ===</code> : Processus complet</li>
+</ul>
+</li>
+<li>
+<p><strong>Messages d'erreur</strong></p>
+<ul>
+<li><code>Arduino non détecté</code> : Vérifiez la connexion USB</li>
+<li><code>Erreur lors de la compilation</code> : Problème de code source</li>
+<li><code>Échec du téléversement</code> : Problème de communication</li>
+<li><code>Erreur: Bibliothèque [nom] non trouvée</code> : Bibliothèque manquante</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Astuce</strong> : Utilisez le bouton "Masquer/Afficher les logs" pour gérer l'affichage des informations détaillées. Le bouton "Effacer les logs" permet de nettoyer l'historique des messages.</p>
+</blockquote>
+<p><img src="images_documentation/logs_explained.png" alt="Interface des logs"></p>
+<h3 id="récupération-des-données">Récupération des Données </h3>
+<h4 id="1-extraction-des-données">1. Extraction des données </h4>
+<ul>
+<li>
+<p><strong>Récupération de la carte SD</strong></p>
+<ol>
+<li>Éteignez la station météo</li>
+<li>Retirez la carte SD du module</li>
+<li>Insérez la carte SD dans votre ordinateur</li>
+<li>Localisez le fichier <code>DATA.BIN</code> à la racine de la carte</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>Important</strong> : Ne modifiez pas le fichier .BIN directement</p>
+</blockquote>
+<p><img src="images_documentation/data_extraction.png" alt="Extraction carte SD"></p>
+</li>
+</ul>
+<h4 id="2-conversion-des-données">2. Conversion des données </h4>
+<ul>
+<li>
+<p><strong>Processus de conversion</strong></p>
+<ol>
+<li>Dans l'application, cliquez sur "Sélectionner un fichier"</li>
+<li>Choisissez le fichier <code>DATA.BIN</code> récupéré</li>
+<li>Cliquez sur "Convertir"</li>
+<li>Attendez la fin de la conversion</li>
+<li>Un message "Conversion terminée avec succès" s'affichera</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Note</strong> : Le fichier CSV sera créé dans le même dossier que le fichier .BIN</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Actions disponibles après conversion</strong></p>
+<ul>
+<li>"📄 Ouvrir le fichier CSV" : Ouvre directement le fichier</li>
+<li>"📁 Ouvrir l'emplacement" : Ouvre le dossier contenant le fichier</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-structure-des-données">3. Structure des données </h4>
+<ul>
+<li>
+<p><strong>Format du fichier CSV</strong><br>
+Les colonnes du fichier sont organisées comme suit :</p>
+<ul>
+<li><code>Date</code> : Date de la mesure (JJ/MM/AAAA)</li>
+<li><code>Heure</code> : Heure de la mesure (HH:MM:SS)</li>
+<li><code>Temperature</code> : En degrés Celsius</li>
+<li><code>Humidite</code> : En pourcentage</li>
+<li><code>Pression</code> : En hectopascals</li>
+<li><code>Altitude</code> : En mètres</li>
+<li><code>Latitude</code> : Position GPS</li>
+<li><code>Longitude</code> : Position GPS</li>
+</ul>
+</li>
+<li>
+<p><strong>Exemple de données</strong></p>
+<pre data-role="codeBlock" data-info="csv" class="language-csv csv"><code><span class="token value">Date</span><span class="token punctuation">,</span><span class="token value">Heure</span><span class="token punctuation">,</span><span class="token value">Temperature</span><span class="token punctuation">,</span><span class="token value">Humidite</span><span class="token punctuation">,</span><span class="token value">Pression</span><span class="token punctuation">,</span><span class="token value">Altitude</span><span class="token punctuation">,</span><span class="token value">Latitude</span><span class="token punctuation">,</span><span class="token value">Longitude</span>
+<span class="token value">01/03/2024</span><span class="token punctuation">,</span><span class="token value">14:30:22</span><span class="token punctuation">,</span><span class="token value">23.5</span><span class="token punctuation">,</span><span class="token value">65</span><span class="token punctuation">,</span><span class="token value">1013.2</span><span class="token punctuation">,</span><span class="token value">102</span><span class="token punctuation">,</span><span class="token value">48.8566</span><span class="token punctuation">,</span><span class="token value">2.3522</span>
+</code></pre><p><img src="images_documentation/data_analysis.png" alt="Exemple Excel"></p>
+</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Astuce</strong> : Pour une meilleure visualisation dans Excel :</p>
+<ul>
+<li>Sélectionnez toutes les données</li>
+<li>Onglet "Données" &gt; "Convertir"</li>
+<li>Choisissez le format "Délimité" &gt; "Virgule"</li>
+</ul>
+</blockquote>
+<h2 id="guide-de-dépannage-avancé">Guide de dépannage avancé </h2>
+<h3 id="problèmes-courants-et-solutions">Problèmes courants et solutions </h3>
+<ol>
+<li><strong>Erreurs de téléversement</strong>
+<ul>
+<li><strong>Table des codes d'erreur</strong></li>
+</ul>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Code d'erreur</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Arduino non détecté</code></td>
+<td>L'Arduino n'est pas reconnu par le système</td>
+<td>- Vérifiez le branchement USB<br>- Essayez un autre port USB<br>- Réinstallez les pilotes</td>
+</tr>
+<tr>
+<td><code>Échec de compilation</code></td>
+<td>Erreur lors de la compilation du code</td>
+<td>- Vérifiez que toutes les bibliothèques sont installées<br>- Consultez les logs pour plus de détails</td>
+</tr>
+<tr>
+<td><code>Erreur de communication</code></td>
+<td>Problème de communication avec l'Arduino</td>
+<td>- Vérifiez que l'Arduino n'est pas utilisé par un autre programme<br>- Redémarrez l'application</td>
+</tr>
+<tr>
+<td><code>Bibliothèque manquante</code></td>
+<td>Une bibliothèque requise n'est pas installée</td>
+<td>- Vérifiez la liste des bibliothèques requises :<br>  • DHT sensor library<br>  • Adafruit BME280<br>  • RTClib<br>  • SdFat<br>  • etc.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Exemples de messages d'erreur dans l'interface :</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>=== ERREUR ===
+• Arduino non détecté sur le port COM
+• Échec de l'installation de la bibliothèque DHT sensor
+• Erreur de compilation : variable non déclarée
+• Erreur de téléversement : port COM occupé
+=== FIN ERREUR ===
+</code></pre></blockquote>
+<h4 id="2-problèmes-de-conversion">2. Problèmes de conversion </h4>
+<ul>
+<li><strong>Erreurs courantes de conversion</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Problème</th>
+<th>Cause possible</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fichier .BIN non trouvé</code></td>
+<td>Le fichier n'est pas à la racine de la carte SD</td>
+<td>- Vérifiez l'emplacement du fichier DATA.BIN<br>- Assurez-vous que le fichier n'a pas été renommé</td>
+</tr>
+<tr>
+<td><code>Erreur de lecture</code></td>
+<td>Fichier corrompu ou incomplet</td>
+<td>- Vérifiez l'intégrité du fichier<br>- Essayez de récupérer une copie de sauvegarde</td>
+</tr>
+<tr>
+<td><code>Dossier converted_files inaccessible</code></td>
+<td>Problème de permissions</td>
+<td>- Vérifiez les droits d'accès<br>- Exécutez l'application en tant qu'administrateur</td>
+</tr>
+<tr>
+<td><code>Format de données invalide</code></td>
+<td>Version incompatible ou données corrompues</td>
+<td>- Vérifiez la version du firmware de la station<br>- Assurez-vous que la carte SD n'a pas été retirée pendant l'enregistrement</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Exemples de messages d'erreur de conversion :</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>=== ERREUR DE CONVERSION ===
+• Erreur : Aucun fichier sélectionné
+• Erreur lors de la conversion : Fichier DATA.BIN non trouvé
+• Erreur : Format de données invalide à l'offset 0x1234
+• Erreur : Impossible de créer le dossier converted_files
+=== FIN ERREUR ===
+</code></pre></blockquote>
+<blockquote>
+<p>💡 <strong>Astuce</strong> : En cas d'échec de conversion, consultez les logs détaillés dans le dossier <code>logs/</code> de l'application.</p>
+</blockquote>
+<h3 id="maintenance-préventive">Maintenance préventive </h3>
+<ol>
+<li>
+<p><strong>Vérifications régulières</strong></p>
+<ul>
+<li>Liste de contrôle mensuelle</li>
+<li>Points de maintenance</li>
+</ul>
+</li>
+<li>
+<p><strong>Mises à jour</strong></p>
+<ul>
+<li>Procédure de mise à jour</li>
+<li>Vérification des versions</li>
+</ul>
+</li>
+</ol>
+<h2 id="ressources-supplémentaires">Ressources supplémentaires </h2>
+<h3 id="liens-utiles">Liens utiles </h3>
+<ul>
+<li><a href="https://github.com/mr22206/3W_Electron_App/blob/main/documentation/documentation_technique.md">Documentation technique</a></li>
+<li><a href="https://github.com/mr22206/3W_Electron_App">GitHub</a> - Code source de l'application</li>
+<li><a href="https://www.arduino.cc/reference/fr/">Documentation Arduino</a> - Documentation officielle Arduino</li>
+<li><a href="https://forum.arduino.cc/c/french/22">Forum Arduino</a> - Forum officiel Arduino en français</li>
+<li><a href="https://www.youtube.com/playlist?list=PLKxVGO5_JZQBZoQFYwTFuUfDDYrIrYrB2">Tutoriels vidéo</a> - Chaîne YouTube Arduino en français</li>
+<li><a href="mailto:support@stationmeteo.fr">Support technique</a> - Contactez notre équipe technique</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Note</strong> : Pour toute question spécifique sur l'application, consultez d'abord la <a href="faq.md">FAQ</a> ou contactez le support technique.</p>
+</blockquote>
+<p>© 2024 Station Météo Embarquée - Tous droits réservés</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
