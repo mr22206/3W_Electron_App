@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/3W_Electron_App/static/css/main.df7e1308.css",
+    "main.js": "/3W_Electron_App/static/js/main.a2267645.js",
+    "index.html": "/3W_Electron_App/index.html",
+    "main.df7e1308.css.map": "/3W_Electron_App/static/css/main.df7e1308.css.map",
+    "main.a2267645.js.map": "/3W_Electron_App/static/js/main.a2267645.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df7e1308.css",
+    "static/js/main.a2267645.js"
+  ]
+}
