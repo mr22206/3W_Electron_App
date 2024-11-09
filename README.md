@@ -10,6 +10,7 @@
 5. [Support](#support)
 
 ## Introduction
+La Station Météo Embarquée est une solution innovante qui combine matériel Arduino et logiciel de gestion pour offrir un système complet de surveillance météorologique. Cette application permet aux utilisateurs de déployer facilement des stations météo autonomes et de gérer efficacement la collecte et l'analyse des données environnementales.
 
 ### Vue d'ensemble du système
 La Station Météo Embarquée se compose de deux parties principales :
